@@ -8,8 +8,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: reediculous456/ms-teams-deploy-card@v2 
-        if: always()
+      - uses: opsless/ms-teams-github-actions@main
+        if: always() 
         with:
           github-token: ${{ github.token }}
           webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
